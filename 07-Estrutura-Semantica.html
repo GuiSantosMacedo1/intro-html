@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sobre a estrutura semântica do HTML5.">
+  <title>Estrutura Semântica</title>
+</head>
+
+<style>
+  body {
+    background-color: #1d1d1d;
+    color: #f0f0f0;
+    font-family: sans-serif;
+  }
+
+  /* ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  } */
+</style>
+
+<body>
+  <!-- header - representa o cabeçalho de uma página ou seção -->
+  <header>
+    <h1>Estrutura Semântica do HTML5</h1>
+
+    <!-- nav - representa a seção de navegação de uma página -->
+    <nav>
+      <!-- Temos também sem a parte de ul -->
+      <!-- <a href="index.html">Home</a>
+        <a href="07-Estrutura-Semantica.html">Estrutura Semântica</a>
+        <a href="08-Formularios.html">Formulários</a>
+        <a href="09-Element os-de-Texto.html">Elementos de Texto</a>
+        <a href="10-Elementos-de-Midia.html">Elementos de Mídia</a>
+        <a href="11-Elementos-de-Lista.html">Elementos de Lista</a>
+        <a href="12-Elementos-de-Tabela.html">Elementos de Tabela</a> -->
+
+
+      <!-- deixei uma lista nao ordenada com links para outras páginas do site, por conta de acessibilidade e SEO, pois os motores de busca conseguem entender melhor a estrutura do site. -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/">Estrutura Semântica</a></li>
+        <li><a href="08-Formularios.html">Formulários</a></li>
+        <li><a href="09-Element os-de-Texto.html">Elementos de Texto</a></li>
+        <li><a href="10-Elementos-de-Midia.html">Elementos de Mídia</a></li>
+        <li><a href="11-Elementos-de-Lista.html">Elementos de Lista</a></li>
+        <li><a href="12-Elementos-de-Tabela.html">Elementos de Tabela</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main - representa o conteúdo principal de uma página, que é único e relevante para o contexto da página,
+  ele não deve ser usado para conteúdo que se repete em várias páginas, como cabeçalhos, rodapés ou barras laterais. -->
+  <main>
+
+    <!-- section - representa uma seção de conteúdo relacionada, que pode ter um título e pode ser usada para agrupar elementos relacionados. Pode ser usado mais de uma vez em uma página. -->
+    <section>
+      <h2> Projetos </h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maiores dignissimos aspernatur ipsam. Et
+        cupiditate qui, officiis distinctio unde consequatur commodi ipsam. Praesentium ipsa illo, totam nisi voluptatum
+        ipsam cum! </p>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, fugiat!</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, fugiat!</p>
+    </section>
+
+    <section>
+      <h2>Últimos Artigos</h2>
+
+      <!-- article - representa um conteúdo independente, que pode ser distribuído ou reutilizado em outros contextos, como um post de blog, uma notícia ou um comentário. Pode ser usado mais de uma vez em uma página. -->
+      <article>
+        <h3>Artigo de la la</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia rerum optio nam, alias perspiciatis et labore. Repellendus perferendis quisquam vel.</p>
+      </article>
+      <article>
+        <h3>Artigo de lo lo</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia rerum optio nam, alias perspiciatis et labore. Repellendus perferendis quisquam vel.</p>
+      </article>
+    </section>
+
+    <!-- aside - representa um conteúdo que é secundário ou complementar ao conteúdo principal, como uma barra lateral, um resumo ou uma nota. -->
+    <aside>
+      <h2>Informações Adicionais</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </main>
+
+  <!-- footer - representa o rodapé de uma página ou seção, que pode conter informações de copyright, links para políticas de privacidade, contatos ou outros elementos relacionados. -->
+  <footer>
+    <p style="text-align: center;">© 2024 Todos os direitos reservados.</p>
+    <address>
+      <p style="text-align: center;">Contato: <a href="mailto:guisantosmacedo7@gmail.com">guisantosmacedo7@gmail.com</a></p>
+      <p style="text-align: center;">Telefone: (11) 97990-8989</p>
+      <p style="text-align: center;"> Rua Exemplo, 123 - São Paulo/SP </p>
+    </address>
+
+    <nav>
+      <ul style="text-align: center; list-style-type: none; padding: 0; display: flex; justify-content: center; gap: 20px;">
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Termos de Uso</a></li>
+        <li><a href="#">Mapa do Site</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>

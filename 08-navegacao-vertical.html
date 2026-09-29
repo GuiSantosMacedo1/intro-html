@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site sobre navegação vertical em HTML">
+  <title>Navegação Vertical</title>
+  <style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1c1c1c;
+      color: #fff;
+    }
+    header, footer {
+      background-color: #333;
+      padding: 1rem
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      background-color: #555;
+    }
+    a:hover {
+      background-color: #777;
+    }
+
+    #voltar {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body id="top">
+  <header>
+    <!-- navagação vertical seria do lado esquerdo e quando clicar em algum item, o conteúdo da página será aquele que voce clicar -->
+    <h1>Navegação Vertical | HTML</h1>
+    <nav>
+      <ul>
+        <li><a href="#principal">Item 1</a></li>
+        <li><a href="#outro">Item 2</a></li>
+        <li><a href="#mais">Item 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="principal">
+      <h2>Conteúdo da Página</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit delectus repellendus ipsum totam neque excepturi Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae quam quaerat! Perferendis repellat, eum qui officia error beatae corporis, illum doloribus tempore natus nobis magnam alias, suscipit rerum velit quidem reprehenderit debitis distinctio laboriosam? Alias quod laboriosam earum magnam quo ad quis incidunt laborum sunt, expedita ut dignissimos culpa necessitatibus ipsam omnis. Iure, provident hic? Corrupti totam dignissimos vitae at atque veniam placeat? Rem eos placeat similique, amet hic provident? Obcaecati a quis ducimus odio? Dolor vero repellendus veritatis nulla autem, doloremque ratione cumque soluta fugit, voluptate cum earum.
+        iure, minus earum itaque rerum?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, nobis. Esse aut aperiam, recusandae ea quos
+        quaerat qui ullam delectus!</p>
+    </section>
+    <section id="outro">
+      <h2>Outro Conteúdo</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit delectus repellendus ipsum totam neque excepturi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed quod aperiam delectus esse autem expedita laboriosam accusantium, corrupti id repudiandae reprehenderit eius veritatis, omnis nemo. Adipisci dolor, sequi, nihil non, ut culpa at maxime voluptates sapiente distinctio aliquam eveniet iste ad consectetur? A quis incidunt repellendus sapiente modi odit, quaerat dolorum eligendi in? Temporibus quasi, rerum voluptatem, labore eaque obcaecati quae voluptates deserunt corporis delectus veritatis. Quidem sed laudantium enim atque aspernatur deleniti molestiae! Et, nesciunt blanditiis qui in voluptatibus omnis. Quaerat hic dolorem corporis? Eum, voluptates natus. Commodi, doloribus.
+        iure, minus earum itaque rerum?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, nobis. Esse aut aperiam, recusandae ea quos
+        quaerat qui ullam delectus!</p>
+    </section>
+    <section id="mais">
+      <h2>Mais Conteúdo</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit delectus repellendus ipsum totam neque excepturi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ab vitae eveniet tenetur quibusdam sint ducimus inventore at modi, dolores, eos, corporis a ut assumenda explicabo ratione adipisci sed sit. Enim animi, optio rerum, labore commodi necessitatibus atque quasi laudantium hic quae recusandae maiores delectus explicabo. Blanditiis reiciendis excepturi, temporibus fugiat recusandae qui placeat dolorum sed omnis accusamus molestias atque nesciunt necessitatibus! Reprehenderit nobis quasi fugiat deleniti corporis tenetur, harum nulla illum soluta minima, incidunt officiis. Animi qui quisquam enim. Laborum eaque et earum dolor sequi itaque sapiente inventore corporis.
+        iure, minus earum itaque rerum?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, nobis. Esse aut aperiam, recusandae ea quos
+        quaerat qui ullam delectus!</p>
+    </section>
+
+    <section id="voltar">
+      <h2>Voltar para o topo</h2>
+      <a href="#top">Clique aqui para voltar para o topo</a>
+    </section>
+  </main>
+
+  <footer> &copy 2026 - Todos os direitos reservados.</footer>
+</body>
+
+</html>

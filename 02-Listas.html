@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listas</title>
+</head>
+
+<body>
+  <h1> Sobre elementos listas</h1>
+  <p>Listas são umas das coisas mais importantes do <strong>HTML</strong>. Ela sempre aparece em páginas web.</p>
+
+  <hr>
+
+  <h2> Conhecendo a lista </h2>
+
+  <h3>Lista não ordenada (UL)</h3>
+  <p>Usamos a lista não ordenada quando <strong> a ordem dos itens não é importante </strong></p>
+
+  <!-- ul = unrodered list (lista não ordenada) -->
+  <ul type="square"><!-- Aqui começa a lista não ordenada -->
+    <!-- li = li/list item = item da lista -->
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+
+  <h3>Lista ordenada (OL)</h3>
+  <p>Aqui, nessa estrutura, a ordem como os itens são apresentados na tela <strong>importa</strong>.</p>
+  <!-- ol = ordered list (lista ordenada) -->
+  <ol type="a" start="1"><!-- Aqui começa a lista ordenada -->
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ol>
+
+  <h3>Lista aninhadas</h3>
+  <p>Listas aninhadas são listas dentro de listas. Elas podem ser ordenadas ou não ordenadas.</p>
+  <ul>
+    <li>
+      <p>Areas</p>
+      <ul>
+        <li>Front End</li>
+        <li>Back End</li>
+        <li>Full Stack</li>
+      </ul>
+    </li>
+    <li>
+      <p>Design</p>
+      <ul>
+        <li>UI</li>
+        <li>UX</li>
+        <li>O que estudar
+          <ol>
+            <li>Design de Interação</li>
+            <li>Design Visual</li>
+            <li>Design de Produto</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <hr>
+
+  <h3>Lista de descrição (DL)</h3>
+  <p> Esse tipo de lista é usada para descrever conceitos ou termos. </p>
+
+  <!-- dl = description list (lista de descrição) -->
+  <!-- dt = description term/ data term (termo da descrição) -->
+  <!-- dd = description description/ data description (descrição da descrição) -->
+  <dl>
+    <dt>HTML</dt>
+    <dd> Linguagem utilizada para estruturar páginas da web.</dd>
+
+    <dt> CSS</dt>
+    <dd> Linguagem utilizada para estilizar páginas da web.</dd>
+
+    <dt> JavaScript</dt>
+    <dd> Linguagem de programação utilizada para adicionar interatividade às páginas da web.</dd>
+
+  </dl>
+  <hr>
+
+</body>
+
+</html>

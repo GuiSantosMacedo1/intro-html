@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+</head>
+
+<body>
+  <h1> Âncoras</h1>
+  <hr>
+
+  <h2>Conhecendo o elemente de âncora</h2>
+  <p>O elemento de âncora(anchors) é usado para criar links em uma página web. Ele é representado pela tag
+    <code>&lt;a&gt;</code>
+    e possui o atributo <code>href</code> que define o destino do link.
+  </p>
+  <!-- href = HyperLink Referece, Refere-se ao destino do link, que pode ser uma URL externa, um caminho relativo para outra página do mesmo site ou até mesmo um ponto específico dentro da mesma página. -->
+  <a href="http://www.google.com">Google</a>
+
+  <hr>
+  <h2>Explorando os links</h2>
+  <h3>Link interno</h3>
+  <a href="02 - Listas.html">Página Listas</a> <br>
+  <a href="01 - Elemento-Textual.html">Página Elemento Textual</a>
+
+  <h3>Link externo</h3>
+  <!-- target = "_blank" (abre link em uma nova aba) -->
+  <a href="http://www.google.com" target="_blank"> Acessar recurso </a>
+  <p>Este é um link externo que será aberto em uma nova aba. Para fazer isso deve abrir o target="_blank"</p>
+
+  <ul>
+    <li>_blank que abre o link em uma nova aba</li>
+    <li>_self que abre o link na mesma aba</li>
+    <li>_parent que abre o link na aba pai</li>
+    <li>_top que abre o link na aba principal</li>
+  </ul>
+
+  <h3>Link para email</h3>
+  <a href="mailto:guisantosmacedo7@gmail.com">Enviar email guisantosmacedo7@gmail.com</a>
+  <p>Este é um link para enviar um email. Para fazer isso deve abrir o href="mailto:email"</p>
+
+  <p>para acessar pelo celular antes de acessar o link externo, é necessário que o usuário clique no link e segure por
+    alguns segundos, depois abrirá uma janela com a opção de abrir em uma nova aba.</p>
+
+  <h3>Link para telefone</h3>
+  <p>Também é possível para configurar elemento &lt; a &gt; para abrir o app de discagem, com o atributo
+    href="tel:numero"</p>
+  <a href="tel:+5511979908915">Ligar para +55 11 97990-8915</a>
+  <p>Este é um link para ligar para um número de telefone. Para fazer isso deve abrir o href="tel:numero"</p>
+
+  <h3>Link para download</h3>
+  <p>Também é possível para configurar elemento &lt; a &gt; para fazer download de arquivos, com o atributo
+    href="caminho do arquivo" e o atributo download</p>
+  <a href="02 - Listas.html" download>Baixar arquivo PDF</a>
+  <p>Este é um link para baixar um arquivo PDF. Para fazer isso deve abrir o href="caminho do arquivo" e o atributo
+    download</p>
+
+</body>
+
+</html>

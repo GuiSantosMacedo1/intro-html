@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Imagem</title>
+</head>
+
+<body>
+  <h1>Trabalhando com Imagem</h1>
+  <hr>
+
+  <p>Trabalhando com imagens em HTML, usando o elemento &lt;img&gt;</p>
+  <img src="pexels-bibekghosh-14553707.jpg" alt="Imagem de uma tela de computador com programação" width="300">
+  <!-- Não precisa fechar a tag &lt;img&gt;, pois ela é uma tag auto fechável. -->
+
+  <p>Entendendo atributos do elemento &lt;img&gt;:</p>
+  <ul>
+    <li>src: Define o caminho da imagem</li>
+    <li>alt: Define um texto alternativo para a imagem, caso ela não seja carregada e assim gerando um fallback,
+      melhorando a acessibilidade</li>
+    <li>width: Define a largura da imagem</li>
+    <li>height: Define a altura da imagem</li>
+  </ul>
+
+  <h2>Trabalhando com recurso externos</h2>
+  <p>Configurando imagens externas</p>
+  <p>As imagens externas podem ser incorporadas diretamente no HTML, desde que o servidor permita o acesso.</p>
+  <p>Exemplo de imagem externa:</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBE4r2amNy99ElvoUogyd6cdaOuMuKu1doIp0AlkjKJQ&s=10"
+    alt="Imagem de uma floresta" width="300">
+
+
+  <h2>Outras abordagens</h2>
+  <h3>Elemento figure</h3>
+  <p>Outra abordagem para incluir imagens no HTML é usando o elemento &lt;figure&gt; e &lt;figcaption&gt;.</p>
+  <figure>
+    <img src="pexels-bibekghosh-14553707.jpg" alt="Imagem de uma tela de computador com programação" width="300">
+    <figcaption>Imagem de uma tela de computador com programação</figcaption>
+  </figure>
+
+  <h3>Elemento picture</h3>
+  <p>O elemento &lt;picture&gt; serve para controlarmos qual arquivo será carregado dependendo do tamanho da tela ou da
+    resolução ou determinadas condições.</p>
+  <picture>
+    <source srcset="pexels-bibekghosh-14553707.jpg" media="(max-width: 600px)">
+    <source
+      srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBE4r2amNy99ElvoUogyd6cdaOuMuKu1doIp0AlkjKJQ&s=10"
+      media="
+      (min-width: 601px)">
+
+    <!-- ter o img dentro do picture é obrigatório, pois ele vai servir como fallback caso nenhuma das condições do source -->
+    seja atendida.
+    <img src="pexels-bibekghosh-14553707.jpg" alt="Imagem de uma tela de computador com programação" width="300">
+  </picture>
+
+  <hr>
+  <h2>Sobre tipos de imagens</h2>
+  <p>VocÊ pode encontrar um acervo muito grande tipos de imagens. A escolha da imagem certa pode elevar a perfomace do
+    seu site. Veja a lista abaixo: </p>
+  <ul>
+    <li><strong>JPEG</strong>: Formato de imagem mais comum, com boa qualidade e tamanho reduzido. Ideal para
+      fotografias e imagens com muitas cores. Se você tentar otimizar demais, a perda de qualidade pode ser
+      significativa.</li>
+
+    <li><strong>PNG</strong>: Formato de imagem com suporte a transparência, ideal para logotipos e imagens com fundo
+      transparente.</li>
+
+    <li><strong>GIF</strong>: Formato de imagem animada, ideal para pequenos gráficos e animações simples.</li>
+
+    <li><strong>SVG</strong>: Formato de imagem vetorial, ideal para gráficos e ícones escaláveis sem perda de
+      qualidade.</li>
+
+    <li><strong>WebP</strong>: Formato de imagem moderno, com boa qualidade e tamanho reduzido, ideal para web. Possuí
+      suporte também com transparência, sendo uma excelente alternativa ao JPEG e PNG.</li>
+
+    <li> <strong>AVIF</strong>: Formato de mais recente e também muito eficiente. É excelente para fotografias, imagens
+      grandes, sites onde desempenho é importante.</li>
+  </ul>
+</body>
+
+</html>
